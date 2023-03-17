@@ -5,7 +5,6 @@
  *
  * Return: 0
  */
- 
 int main(void)
 {
 	int a;
@@ -15,4 +14,3 @@ int main(void)
 	printf("\n");
 	return (0);
 }
-
