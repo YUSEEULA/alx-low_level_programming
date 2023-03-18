@@ -1,12 +1,17 @@
 #include <stdio.h>
 
+/*
+ * main - Write a C program that prints the size of various types on the computer it is compiled and run on
+ *
+ * Return: always 0
+ */
 int main()
 {
-    int myChar;
+    char myChar;
     int myInt;
-    int myLongInt;
-    int myLongLongInt;
-    int myFloat;
+    long int myLongInt;
+    long long int myLongLongInt;
+    float myFloat;
     {
         printf("size of char: %d bytes\n",sizeof(myChar));
         printf("size of int: %d bytes\n",sizeof(myInt));
