@@ -10,14 +10,12 @@ int main(void)
 	int X;
 	int Y;
 
-	X = 48;
-	while (X < 58)
+	for (X = 0; X <= 10; X++)
 	{
-		Y = 48;
-		while (Y < 58)
+		for (Y = 0; Y < 10; Y++)
 		{
-			putchar(X);
-			putchar(Y);
+			putchar(X + '0');
+			putchar(Y + '0');
 			Y++;
 			putchar(',');
 			putchar(' ');
