@@ -7,9 +7,9 @@
  */
 int main(void)
 {
-	int z;
+	int z = 0;
 
-	for (z = 0; z <= 10; z++)
+	while (z < 10)
 	{
 		putchar(z + '0');
 		if (z < 9)
@@ -17,6 +17,7 @@ int main(void)
 			putchar(',');
 			putchar(' ');
 		}
+		z++;
 	}
 	putchar('\n');
 	return (0);
