@@ -16,6 +16,8 @@ int main(void)
 		{
 			putchar(X + '0');
 			putchar(Y + '0');
+			if (X == 8 && Y == 9)
+				continue;
 			putchar(',');
 			putchar(' ');
 		}
