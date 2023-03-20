@@ -7,18 +7,20 @@
  */
 int main(void)
 {
-        int a, b, c;
+	int A;
+	int B;
+	int C;
 
-        for (a = 0; a < 8; a++)
+        for (A = 0; A < 8; A++)
         {
-                for (b = a + 1; b < 9; b++)
+                for (B = A + 1; B < 9; B++)
                 {
-			for (c = b + 1; c < 10; c++)
+			for (C = B + 1; C < 10; C++)
 			{
-				putchar(a + '0');
-				putchar(b + '0');
-				putchar(c + '0');
-				if (a == 7 && b == 8 && c == 9)
+				putchar(A + '0');
+				putchar(B + '0');
+				putchar(C + '0');
+				if (A == 7 && B == 8 && C == 9)
 					continue;
 				putchar(',');
 				putchar(' ');
