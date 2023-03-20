@@ -11,10 +11,10 @@ int main(void)
 	int B;
 	int C;
 
-        for (A = 0; A < 8; A++)
-        {
-                for (B = A + 1; B < 9; B++)
-                {
+	for (A = 0; A < 8; A++)
+	{
+		for (B = A + 1; B < 9; B++)
+		{
 			for (C = B + 1; C < 10; C++)
 			{
 				putchar(A + '0');
@@ -25,9 +25,8 @@ int main(void)
 				putchar(',');
 				putchar(' ');
 			}
-
-                }
-        }
+		}
+	}
         putchar('\n');
         return (0);
 }
