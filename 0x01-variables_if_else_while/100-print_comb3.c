@@ -18,8 +18,6 @@ int main(void)
 			putchar(Y + '0');
 			putchar(',');
 			putchar(' ');
-			if (X == 8 && Y == 9);
-			continue;
 		}
 	}
 	putchar('\n');
