@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_sign - function that prints the sign of a number
- *
+ * @n: number to be verified
  * Return: return 1 or 0 or -1
  */
 int print_sign(int n)
