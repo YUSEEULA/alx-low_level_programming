@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * jack_bauer - function that prints every minute of the day of Jack Bauer
- * @h: hour
- * @m: munite
+ * h = hour
+ * m = munite
  * Return: Always 0
  */
 
