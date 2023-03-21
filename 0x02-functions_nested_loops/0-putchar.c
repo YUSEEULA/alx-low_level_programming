@@ -15,6 +15,7 @@ int main(void)
 	putchar('h');
 	putchar('a');
 	putchar('r');
+	putchart('\n');
 
 	return (0);
 }
