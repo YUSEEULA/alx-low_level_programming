@@ -2,23 +2,12 @@
 #include <stdio.h>
  /**
   * add - function that adds two integers and returns the result
-  * x = integer 1
-  * y = integer 2
-  * sum = result
-  * Return : result of sum
+  * @a: first number input
+  * @b: second number input
+  * 
+  * Return : a + b
   */
-int add(int x, int y)
+int add(int a, int b)
 {
-	int sum = x + y;
-	if (sum < 0)
-	{
-		putchar('-');
-		sum = -sum;
-	}
-	if (sum > 9)
-	{
-		add(sum / 10, 0);
-	}
-	putchar('0' + sum % 10);
-	return (sum);
+	return (a + b);
 }
