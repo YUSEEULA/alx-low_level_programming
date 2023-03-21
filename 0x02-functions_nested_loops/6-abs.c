@@ -4,7 +4,7 @@
 /**
  * _abs - function that computes the absolute value of an integer
  * @n: integer to be verified
- * Return : return 0
+ * Return : absolute value of n
  */
 
 int _abs(int n)
