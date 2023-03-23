@@ -1,8 +1,10 @@
 #include "main.h"
+
 /**
- * _isdigit -  function that checks for a digit
- * @c: digit to be verified
- * Return : 1 if c is a digit and 0 otherwise
+ * _isdigit - function that checks for a digit
+ *
+ * @c: charater
+ * Return: 1 if c is a digit ,else 0
  */
 
 int _isdigit(int c)
