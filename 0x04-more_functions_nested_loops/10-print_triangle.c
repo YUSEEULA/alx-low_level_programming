@@ -1,13 +1,14 @@
-#include "main.h"
+include "main.h"
 
 /**
- * print_triangle - function that prints a triangle
- * @size: the size of the triange
- * Return: returns nothing
+ * print_triangle - fuction that print a triangle
+ * @size: size of the triangle
+ * Return: the answer
  */
+
 void print_triangle(int size)
 {
-	int A, B, S;
+	int A, H, S;
 
 	if (size <= 0)
 	{
@@ -21,7 +22,7 @@ void print_triangle(int size)
 			{
 				_putchar(' ');
 			}
-			for (B = 1; B <= A; B++)
+			for (H = 1; H <= A; H++)
 			{
 				_putchar('#');
 			}
