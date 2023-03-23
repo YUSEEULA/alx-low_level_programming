@@ -2,8 +2,7 @@
 
 /**
  * print_number - function that print numbers
- * @n: number
- * Return: always 0
+ * @n: the number to print
  */
 void print_number(int n)
 {
