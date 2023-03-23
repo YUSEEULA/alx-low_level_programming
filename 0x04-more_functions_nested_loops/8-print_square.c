@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-*print_square - prints squares
-*@size: parameter
-*Return:returns nothing
-*/
+ * print_square - function that prints a square
+ * @size: the size of the square
+ * Return : the answer
+ */ 
 
 void print_square(int size)
 {
@@ -15,12 +15,15 @@ void print_square(int size)
 		 _putchar('\n');
 		 return;
 	}
-	for (a = 0; a < size; a++)
+	else
 	{
-		for (b = 0; b < size; b++)
+		for (a = 0; a < size; a++)
 		{
-			_putchar('#');
+			for (b = 0; b < size; b++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
