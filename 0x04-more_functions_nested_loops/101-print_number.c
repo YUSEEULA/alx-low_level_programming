@@ -1,9 +1,9 @@
 #include "main.h"
-
 /**
- * print_number - function that print numbers
- * @n: the number to print
- */
+* print_number - Funtion that prints a number
+* @n: The number to print
+*
+*/
 void print_number(int n)
 {
 	unsigned int num = n;
