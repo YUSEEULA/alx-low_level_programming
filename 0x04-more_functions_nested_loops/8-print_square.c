@@ -2,7 +2,9 @@
 
 /**
  * print_square - function that print square
- *@size: size of square
+ * @size: size of square
+ * A = row
+ * B = column
  * Return: the answer
  */
 
