@@ -2,15 +2,14 @@
 
 /**
  * print_square - function that print square
+ *
  * @size: size of square
- * A = row
- * B = column
  * Return: the answer
  */
 
 void print_square(int size)
 {
-	int A, B;
+	int row, column;
 
 	if (size <= 0)
 	{
@@ -18,9 +17,9 @@ void print_square(int size)
 	}
 	else
 	{
-		for (A = 1; A <= size; A++)
+		for (row = 1; row <= size; row++)
 		{
-			for (B = 1; B <= size; B++)
+			for (column = 1; column <= size; column++)
 			{
 				_putchar('#');
 			}
