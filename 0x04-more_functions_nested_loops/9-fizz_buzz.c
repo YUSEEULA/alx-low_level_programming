@@ -3,8 +3,11 @@
 /**
  * main - entry point
  *
- * Return: the answer
+ * Description: prints FizzBuzz
+ *
+ * Return: void
  */
+
 int main(void)
 {
 	int x;
