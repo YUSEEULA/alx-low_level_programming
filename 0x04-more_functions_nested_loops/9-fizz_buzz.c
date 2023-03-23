@@ -1,43 +1,28 @@
 #include <stdio.h>
-
 /**
  * main - entry point
- *
- * Description: prints FizzBuzz
- *
- * Return: void
+ * n = number
+ * Return: always 0
  */
-
 int main(void)
 {
-	int x;
+	int n;
 
-	for (x = 1; x <= 100; x++)
+	for (n = 1; n <= 100; n++)
 	{
-		if ((x % 3 == 0) && (x % 5 == 0))
-		{
+		if ((n % 3 == 0) && (n % 5 == 0))
 			printf("FizzBuzz");
-		}
-		else if (x % 3 == 0)
-		{
-			printf("Fizz");
-		}
-		else if (x % 5 == 0)
-		{
+		else if (n % 5 == 0)
 			printf("Buzz");
-		}
-		else 
-		{
-			printf("%d", x);
-		}
-		if (x < 100)
-		{
-			printf(" ");
-		}
+		else if (n % 3 == 0)
+			printf("Fizz");
 		else
-		{
+			printf("%i", n);
+
+		if (n < 100)
+			printf(" ");
+		else
 			printf("\n");
-		}
 	}
 	return (0);
 }
