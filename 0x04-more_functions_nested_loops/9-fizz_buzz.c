@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - entry point
  *
- * Return: always 0
+ * Return: the answer
  */
-
 int main(void)
 {
 	int x;
