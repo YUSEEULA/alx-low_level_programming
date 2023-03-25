@@ -8,7 +8,7 @@
 int main(void)
 {
 	long int n = 612852475143;
-	long int div=2, F;
+	long int div=2, a = 0, F;
 
 	while(n!=0)
 	{
@@ -21,6 +21,7 @@ int main(void)
 			if(n == 1)
 			{
 				printf("%ld", F);
+				a = 1;
 				break;
 			}
 		}
