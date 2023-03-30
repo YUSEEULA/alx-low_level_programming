@@ -11,7 +11,7 @@ char *leet(char *s)
 {
 	int a, b;
 	char alpha[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
-	char numbers[] = {4, 3, 0, 7, 1};
+	char numbers[] = "43071";
 
 	for (a = 0; s[a] != '\0'; ++a)
 	{
