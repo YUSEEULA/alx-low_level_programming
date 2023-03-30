@@ -16,9 +16,9 @@ char *cap_string(char *s)
 
 	while (s[letter] != '\0')
 	{
-		if (s[letter] >= 97 && s[letter] <= 122)
+		if (s[0] >= 97 && s[0] <= 122)
 		{
-			s[letter] -= 32;
+			s[0] -= 32;
 		}
 		if (s[letter] == ' ' || s[letter] == ',' || s[letter] == ';'
 			|| s[letter] == '.' || s[letter] == '!' || s[letter] == '?'
