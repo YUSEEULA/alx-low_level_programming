@@ -13,22 +13,18 @@
 char *cap_string(char *s)
 {
 	int letter = 0;
-	int capitalize_next = 1;
 
 	while (s[letter] != '\0')
 	{
 		if (s[letter] >= 97 && s[letter] <= 122)
 		{
-			s[letter] -= 32;
+			s[letter] = s[letter] - 32;
 		}
 		if (s[letter] == ' ' || s[letter] == ',' || s[letter] == ';'
 			|| s[letter] == '.' || s[letter] == '!' || s[letter] == '?'
 			|| s[letter] == '"' || s[letter] == '(' || s[letter] == ')'
 			|| s[letter] == '{' || s[letter] == '}' || s[letter] == '\t'
 			|| s[letter] == '\n')
-		{
-			capitalize_next = 1;
-		}
 		letter++;
 	}
 	return (s);
