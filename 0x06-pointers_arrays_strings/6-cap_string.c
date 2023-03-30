@@ -13,6 +13,7 @@
 char *cap_string(char *s)
 {
 	int letter = 0;
+	int capitalize_next = 1;
 
 	while (s[letter] != '\0')
 	{
@@ -25,6 +26,9 @@ char *cap_string(char *s)
 			|| s[letter] == '"' || s[letter] == '(' || s[letter] == ')'
 			|| s[letter] == '{' || s[letter] == '}' || s[letter] == '\t'
 			|| s[letter] == '\n')
+		{
+			capitalize_next = 1;
+		}
 		letter++;
 	}
 	return (s);
