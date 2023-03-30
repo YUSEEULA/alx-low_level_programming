@@ -12,9 +12,9 @@
 
 char *cap_string(char *s)
 {
-	int letter = 0;
+	int letter;
 
-	while (s[letter] != '\0')
+	while (letter = 0; s[letter] != '\0'; letter++)
 	{
 		if (s[letter] >= 97 && s[letter] <= 122)
 		{
@@ -29,7 +29,6 @@ char *cap_string(char *s)
 			if (s[letter + 1] >= 97 && s[letter + 1] <= 122)
 				s[letter + 1] -=  32;
 		}
-		letter++;
 	}
 	return (s);
 }
