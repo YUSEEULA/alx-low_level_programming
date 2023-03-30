@@ -11,21 +11,20 @@
 
 char *rot13(char *str)
 {
-	char *result = malloc(strlen(str) + 1);
-	int i, c;
-	for (i = 0; str[i]; i++)
+	int i, j;
+	char a[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char b[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+
+	for (i = 0; str[i] != '\0'; ++i)
 	{
-		c = str[i];
-		if (c >= 'a' && c <= 'z')
+		for (j = 0; a[j] != '\0'; j++)
 		{
-			c = (c - 'a' + 13) % 26 + 'a';
+			if (str[i] == a[j])
+			{
+				str[i] = b[j];
+				break;
+			}
 		}
-		else if (c >= 'A' && c <= 'Z')
-		{
-			c = (c - 'A' + 13) % 26 + 'A';
-		}
-		result[i] = c;
 	}
-	result[i] = '\0';
-	return (result);
+	return (str);
 }
