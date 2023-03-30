@@ -16,7 +16,7 @@ char *cap_string(char *s)
 
 	while (s[letter])
 	{
-		while (!(s[letter] >= 97 && s[letter] <= 122))
+		while (!(s[letter] >= 'a' && s[letter] <= 'z'))
 			letter++;
 		if (s[letter] == ' ' || s[letter] == ',' || s[letter] == ';'
 			|| s[letter] == '.' || s[letter] == '!' || s[letter] == '?'
