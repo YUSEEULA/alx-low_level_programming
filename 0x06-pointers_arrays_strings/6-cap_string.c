@@ -18,7 +18,7 @@ char *cap_string(char *s)
 	{
 		if (s[letter] >= 97 && s[letter] <= 122)
 		{
-			s[letter] = s[letter] - 32;
+			s[letter] -= 32;
 		}
 		if (s[letter] == ' ' || s[letter] == ',' || s[letter] == ';'
 			|| s[letter] == '.' || s[letter] == '!' || s[letter] == '?'
@@ -27,7 +27,7 @@ char *cap_string(char *s)
 			|| s[letter] == '\n')
 		{
 			if (s[letter + 1] >= 97 && s[letter + 1] <= 122)
-				s[letter + 1] = s[letter + 1] - 32;
+				s[letter + 1] -=  32;
 		}
 		letter++;
 	}
