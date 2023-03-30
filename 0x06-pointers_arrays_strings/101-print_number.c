@@ -5,18 +5,20 @@
  * @n: integer
  * Return: the answer
  */
-
 void print_number(int n)
 {
-	unsigned int a;
+	unsigned int i;
 
 	if (n < 0)
 	{
 		_putchar('-');
 		n *= -1;
 	}
-	a = n;
-	if ( a / 10 )
-		print_number(a / 10);
-	_putchar(a % 10 + '0');
+
+	i = n;
+
+	if (i / 10)
+		print_number(i / 10);
+
+	_putchar(i % 10 + '0');
 }
