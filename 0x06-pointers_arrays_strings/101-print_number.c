@@ -5,9 +5,10 @@
  * @n: integer
  * Return: the answer
  */
+
 void print_number(int n)
 {
-	unsigned int i;
+	unsigned int num;
 
 	if (n < 0)
 	{
@@ -15,10 +16,10 @@ void print_number(int n)
 		n *= -1;
 	}
 
-	i = n;
+	num = n;
 
-	if (i / 10)
-		print_number(i / 10);
+	if (num / 10)
+		print_number(num / 10);
 
-	_putchar(i % 10 + '0');
+	_putchar(num % 10 + '0');
 }
