@@ -14,7 +14,7 @@ char *cap_string(char *s)
 {
 	int letter = 0;
 
-	while (s[letter] != '\0')
+	while (s[letter])
 	{
 		while (s[letter] >= 97 && s[letter] <= 122)
 			letter++;
