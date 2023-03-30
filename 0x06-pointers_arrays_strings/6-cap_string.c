@@ -12,21 +12,22 @@
 
 char *cap_string(char *s)
 {
-	int letter = 0;
+	int i;
 
-	while (s[letter])
+	for (i = 0; s[i]; i++)
 	{
-		while (!(s[letter] >= 'a' && s[letter] <= 'z'))
-			letter++;
-		if (s[letter] == ' ' || s[letter] == ',' || s[letter] == ';'
-			|| s[letter] == '.' || s[letter] == '!' || s[letter] == '?'
-			|| s[letter] == '"' || s[letter] == '(' || s[letter] == ')'
-			|| s[letter] == '{' || s[letter] == '}' || s[letter] == '\t'
-			|| s[letter] == '\n')
-		{
-			s[letter] -= 32;
-		}
-		letter++;
+		if (s[i] >= 97 && s[i] <= 122)
+			s[i] -= 32;
+	}
+	if (s[i] == ' ' || s[i] == ',' || s[i] == ';' ||
+		s[i] == '.' || s[i] == '!' || s[i] == '?' ||
+		s[i] == '"' || s[i] == '(' || s[i] == ')' ||
+		s[i] == '{' || s[i] == '}' || s[i] == '\t' ||
+		s[i] == '\n')
+	{
+		s[i] -= 32;
+	}
+		i++;
 	}
 	return (s);
 }
