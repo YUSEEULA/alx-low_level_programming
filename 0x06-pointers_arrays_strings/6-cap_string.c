@@ -25,10 +25,6 @@ char *cap_string(char *s)
 			|| s[letter] == '"' || s[letter] == '(' || s[letter] == ')'
 			|| s[letter] == '{' || s[letter] == '}' || s[letter] == '\t'
 			|| s[letter] == '\n')
-		{
-			if (s[letter + 1] >= 97 && s[letter + 1] <= 122)
-				s[letter + 1] -=  32;
-		}
 		letter++;
 	}
 	return (s);
