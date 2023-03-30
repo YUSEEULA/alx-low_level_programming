@@ -5,7 +5,7 @@
 
 /**
  * *rot13 - function that encodes a string using rot13
- * @s: string to encode
+ * @str: string to encode
  * Return: the answer
  */
 
