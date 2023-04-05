@@ -8,12 +8,15 @@
 
 void _print_rev_recursion(char *s)
 {
-	int len = strlen(s);
-	int i = len - 1;
+	int i;
 
-	if (i >= 0)
+	if (s[i] != '\0')
 	{
 		_putchar(s[i]);
-		_print_rev_recursion(s + i);
+		_print_rev_recursion(s + 1);
+	}
+	else
+	{
+		return;
 	}
 }
