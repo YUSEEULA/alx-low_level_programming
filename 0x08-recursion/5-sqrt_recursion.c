@@ -2,20 +2,23 @@
 /**
  * _sqrt - a function that calculates natural square
  * @n: number which to calcuate the square root
+ * @i: number
  * Return: the answer
  */
 int _sqrt(int n)
 {
-	if (n < 0)
+	int square = i * i;
+
+	if (square > n)
 	{
 		return (-1);
 	}
-	else if (n == 0 || n == 1)
+	else if (square == n)
 	{
-		return (n);
+		return (i);
 	}
 	else
-		return (0);
+		return (_sqrt(n, i + 1);
 }
 
 /**
