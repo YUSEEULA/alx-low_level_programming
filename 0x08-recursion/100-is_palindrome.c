@@ -20,7 +20,7 @@ int _strlen(char *s)
  * compare - function that check if the string is palindrome
  * @s: string
  * @i: index
- * @len: the lenth of the string 
+ * @len: the lenth of the string
  * Return: palindrome or not
  */
 
