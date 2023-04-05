@@ -1,6 +1,41 @@
 #include "main.h"
 #include <string.h>
 
+int _strlen(char *s);
+
+/**
+ * _strlen - function that check the lenth of the string
+ * @s: string
+ * Return: the lenth of the string
+ */
+
+int _strlen(char *s)
+{
+	if (*s == '\0')
+		return (0);
+	return (_strlen(s + 1));
+}
+
+/**
+ * compare - function that check if the string is palindrome
+ * @s: string
+ * Return: palindrome or not
+ */
+
+int compare(int i, int len, char *s)
+{
+	if (len > 0)
+	{
+		if (s[i] != s[len])
+			return (0);
+		else if (s[i] == s[len])
+			return (compare(i + 1, len - 1, s));
+		else
+			return (1);
+	}
+	return (1);
+}
+
 /**
  * is_palindrome - function that searchs palindrome
  * @s: string to be verified
@@ -9,16 +44,5 @@
 
 int is_palindrome(char *s)
 {
-	int len = strlen(s);
-
-	if (len <= 1)
-	{
-		return (1);
-	}
-	if (s[0] != s[len - 1])
-	{
-		return (0);
-	}
-	s[len - 1] = '\0';
-	return (is_palindrome(s + 1));
+	return (compare(0, _strlen(s) - 1, s));
 }
