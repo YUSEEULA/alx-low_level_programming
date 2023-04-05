@@ -1,13 +1,10 @@
 #include "main.h"
-
 /**
- * _sqrt_recursion - function that returns the natural
- * square root of a number
+ * _sqrt - a function that calculates natural square
  * @n: number
- * Return: the natural aquare root of a number
+ * Return: the answer
  */
-
-int _sqrt_recursion(int n)
+int _sqrt(int n)
 {
 	if (n < 0)
 	{
@@ -21,8 +18,16 @@ int _sqrt_recursion(int n)
 	{
 		return (n);
 	}
-	else
-	{
-		return (_sqrt_recursion(n, 1));
-	}
+}
+
+/**
+ * _sqrt_recursion - function that returns the natural
+ * square root of a number
+ * @n: number
+ * Return: the natural aquare root of a number
+ */
+
+int _sqrt_recursion(int n)
+{
+	return (_sqrt(n));
 }
