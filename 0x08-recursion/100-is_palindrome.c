@@ -13,12 +13,14 @@ int _strlen(char *s)
 {
 	if (*s == '\0')
 		return (0);
-	return (_strlen(s + 1));
+	return (1 + _strlen(s + 1));
 }
 
 /**
  * compare - function that check if the string is palindrome
  * @s: string
+ * @i: index
+ * @len: the lenth of the string 
  * Return: palindrome or not
  */
 
