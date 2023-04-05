@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _sqrt - a function that calculates natural square
- * @n: number
+ * @n: number which to calcuate the square root
  * Return: the answer
  */
 int _sqrt(int n)
@@ -10,14 +10,12 @@ int _sqrt(int n)
 	{
 		return (-1);
 	}
-	else if (n == 0)
+	else if (n == 0 || n == 1)
 	{
 		return (n);
 	}
-	else if (n == 1)
-	{
-		return (n);
-	}
+	else
+		return (0);
 }
 
 /**
