@@ -3,7 +3,7 @@
 
 /**
  * main - Entry point , print name
- * @argc: is a count of the arguments supplied to the program 
+ * @argc: is a count of the arguments supplied to the program
  * @argv: is an array of pointers to the strings
  * Return: return the answer
  */
