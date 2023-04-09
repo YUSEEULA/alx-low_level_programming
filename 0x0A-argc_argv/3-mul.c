@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Entry point , print name
@@ -10,25 +11,21 @@
 
 int main(int argc, char *argv[])
 {
-	int i, j, result;
+	int i, j;
+	int mul;
 
-	(void)argv;
+	i = atoi(argv[1]);
+	j = atoi(argv[2]);
+	mul = i * j;
 
-	for (i = 0; i < argc; i++)
+	if (argc == 3)
 	{
-		for (j = 0; j < argc; j++)
-		{
-			if (argc != 2)
-			{
-				printf("Error");
-				return (1);
-			}
-			else
-			{
-				result = i * j;
-				printf("%d\n", result);
-			}
-		}
+		printf("%d\n", mul);
+	}
+	else
+	{
+		printf("Error\n");
+		return (1);
 	}
 	return (0);
 }
