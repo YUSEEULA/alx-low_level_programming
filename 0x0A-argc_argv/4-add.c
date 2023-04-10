@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 	}
-	else 
+	else
 	{
 		for (num1 = 1; num1 < argc; num1++)
 		{
