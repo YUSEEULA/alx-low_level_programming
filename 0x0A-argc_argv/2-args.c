@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point , print name
+ * main - Entry point, prints all arguments
  * @argc: is a count of the arguments supplied to the program
  * @argv: is an array of pointers to the strings
  * Return: return the answer
