@@ -14,10 +14,6 @@ int main(int argc, char *argv[])
 	int i, j;
 	int mul;
 
-	i = atoi(argv[1]);
-	j = atoi(argv[2]);
-	mul = i * j;
-
 	if (argc != 3)
 	{
 		printf("Error\n");
@@ -25,6 +21,9 @@ int main(int argc, char *argv[])
 	}
 	if (argc == 3)
 	{
+		i = atoi(argv[1]);
+		j = atoi(argv[2]);
+		mul = i * j;
 		printf("%d\n", mul);
 	}
 	return (0);
