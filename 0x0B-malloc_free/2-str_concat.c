@@ -27,6 +27,7 @@ char *str_concat(char *s1, char *s2)
 	res = malloc((a + b + 1) * sizeof(char));
 	if (res == NULL)
 		return (NULL);
+	a = b = 0;
 	while (s1[a] != '\0')
 	{
 		res[a] = s1[a];
