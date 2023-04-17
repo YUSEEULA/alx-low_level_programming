@@ -22,4 +22,4 @@ The common predefined macros are GNU C extensions.
 
 // your header file code goes here
 
-#endif 
+#endif
