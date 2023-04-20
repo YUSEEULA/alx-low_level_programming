@@ -29,7 +29,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		number = va_arg(args, const unsigned int);
 		printf("%d", number);
 
-		if (i < n  - 1)
+		if (i < n  - 1 && separator != NULL)
 			printf("%s", separator);
 	}
 	printf("\n");
