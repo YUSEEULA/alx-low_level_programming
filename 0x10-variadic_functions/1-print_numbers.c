@@ -20,14 +20,13 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	if (separator == NULL)
 	{
-		printf("\n");
 		va_end(args);
 		return;
 	}
 
 	for (i = 0; i < n; i++)
 	{
-		number = va_arg(args, int);
+		number = va_arg(args, const unsigned int);
 		printf("%d", number);
 
 		if (i < n  - 1)
