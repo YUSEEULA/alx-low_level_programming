@@ -1,6 +1,7 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
+#include <stdbool.h>
 /**
  * print_all - function that prints anything
  * @format: list of types of arguments passed to the function
@@ -39,7 +40,8 @@ void print_all(const char * const format, ...)
 				i++;
 				continue;
 		}
-		printf(", ");
+		if (format[i + 1])
+			printf(", ");
 		i++;
 	}
 	printf("\n");
