@@ -10,15 +10,13 @@ void print_all(const char * const format, ...)
 {
 	va_list args;
 
-	int i = 0, comma = 0;
+	int i = 0;
 	char *s;
 
 	va_start(args, format);
 
-	while (format != NULL && format[i] != '\0')
+	while (format[i] != '\0')
 	{
-		if (comma)
-			printf(", ");
 		switch (format[i])
 		{
 			case 'c':
@@ -38,12 +36,11 @@ void print_all(const char * const format, ...)
 					printf("%s", s);
 				break;
 			default:
-				comma = 0;
-				i++;
-				continue;
+				break;
 		}
-		comma = 1;
 		i++;
+		if (format[i] != '\0')
+			printf(", ");
 	}
 	printf("\n");
 	va_end(args);
