@@ -31,6 +31,7 @@ void print_all(const char * const format, ...)
 				if (str == NULL)
 				{
 					printf("(nil)");
+					continue;
 				}
 				printf("%s", str);
 				break;
