@@ -1,7 +1,6 @@
-#include "lists.h"
 #include <stdio.h>
 
-void b_main(void);
+void b_main(void)__attribute__((constructor));
 
 /**
  * b_main - function that print a message before the main function
