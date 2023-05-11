@@ -60,6 +60,8 @@ void copy_file(int file_from, int file_to)
 		dprintf(STDERR_FILENO, "Can't read to file");
 		exit(98);
 	}
+	close(file_from);
+	close(file_to);
 }
 
 /**
@@ -96,9 +98,6 @@ int main(int argc, char *argv[])
 	file_to = open_file(argv[2], O_CREAT | O_WRONLY | O_TRUNC);
 
 	copy_file(file_from, file_to);
-
-	close_file(file_from);
-	close_file(file_to);
 
 	return (0);
 }
