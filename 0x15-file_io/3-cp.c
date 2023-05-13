@@ -45,9 +45,9 @@ int open_file(const char *filename, int mode)
 void copy_file(int file_from, int file_to)
 {
 	char buffer[1024];
-	int nread = read(file_from, buffer, sizeof(buffer));
+	int nread;
 
-	while (nread > 0)
+	while ((nread = read(file_from, buffer, sizeof(buffer))) > 0)
 	{
 		if (write(file_to, buffer, nread) != nread)
 		{
