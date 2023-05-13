@@ -23,12 +23,12 @@ int open_file(const char *filename, int mode)
 	{
 		if (mode == O_RDONLY)
 		{
-			dprintf(STDERR_FILENO, "Can't read from file %s", filename);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
 			exit(98);
 		}
 		else
 		{
-			dprintf(STDERR_FILENO, "Can't write from file %s", filename);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
 			exit(99);
 		}
 	}
@@ -51,13 +51,13 @@ void copy_file(int file_from, int file_to)
 	{
 		if (write(file_to, buffer, nread) != nread)
 		{
-		dprintf(STDERR_FILENO, "Can't write to file");
+		dprintf(STDERR_FILENO, "Error: Can't write to %d\n", file_to);
 		exit(99);
 		}
 	}
 	if (nread == -1)
 	{
-		dprintf(STDERR_FILENO, "Can't read to file");
+		dprintf(STDERR_FILENO, "Error: Can't read from file %d\n", file_from);
 		exit(98);
 	}
 	close(file_from);
@@ -72,7 +72,7 @@ void close_file(int fDescriptor)
 {
 	if (close(fDescriptor) == -1)
 	{
-		dprintf(STDERR_FILENO, "Can't close fd %d", fDescriptor);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fDescriptor);
 		exit(100);
 	}
 }
@@ -90,7 +90,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 
